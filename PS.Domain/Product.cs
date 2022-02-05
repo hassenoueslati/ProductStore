@@ -6,8 +6,9 @@ namespace PS.Domain
 {
     public class Product
     {
+  
         public int ProductId { get; set; }
-        public String Name { get; set; }
+        public string Name { get; set; }
         public DateTime DateProd { get; set; }
         public int Quantity { get; set; }
 
@@ -15,6 +16,13 @@ namespace PS.Domain
 
         public string Description { get; set; }
 
-        
+        public Category Category { get; set; }
+
+        public List<Provider> Providers { get; set; }
+
+        public override string ToString()
+        {
+            return "Name : "+ Name + " Quantity : " + Quantity;
+        }
     }
 }

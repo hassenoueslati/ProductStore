@@ -51,11 +51,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Hassen\\Desktop\\4TWIN\\S2\\.NET\\ProductStore\\PS.GUI\\PS.GUI.csproj",
+      "projectUniqueName": "C:\\Users\\Hassen\\Documents\\GitHub\\ProductStore\\PS.GUI\\PS.GUI.csproj",
       "projectName": "PS.GUI",
-      "projectPath": "C:\\Users\\Hassen\\Desktop\\4TWIN\\S2\\.NET\\ProductStore\\PS.GUI\\PS.GUI.csproj",
+      "projectPath": "C:\\Users\\Hassen\\Documents\\GitHub\\ProductStore\\PS.GUI\\PS.GUI.csproj",
       "packagesPath": "C:\\Users\\Hassen\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Hassen\\Desktop\\4TWIN\\S2\\.NET\\ProductStore\\PS.GUI\\obj\\",
+      "outputPath": "C:\\Users\\Hassen\\Documents\\GitHub\\ProductStore\\PS.GUI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Hassen\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -72,11 +72,11 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\Hassen\\Desktop\\4TWIN\\S2\\.NET\\ProductStore\\PS.Domain\\PS.Domain.csproj": {
-              "projectPath": "C:\\Users\\Hassen\\Desktop\\4TWIN\\S2\\.NET\\ProductStore\\PS.Domain\\PS.Domain.csproj"
+            "C:\\Users\\Hassen\\Documents\\GitHub\\ProductStore\\PS.Domain\\PS.Domain.csproj": {
+              "projectPath": "C:\\Users\\Hassen\\Documents\\GitHub\\ProductStore\\PS.Domain\\PS.Domain.csproj"
             },
-            "C:\\Users\\Hassen\\Desktop\\4TWIN\\S2\\.NET\\ProductStore\\PS.Services\\PS.Services.csproj": {
-              "projectPath": "C:\\Users\\Hassen\\Desktop\\4TWIN\\S2\\.NET\\ProductStore\\PS.Services\\PS.Services.csproj"
+            "C:\\Users\\Hassen\\Documents\\GitHub\\ProductStore\\PS.Services\\PS.Services.csproj": {
+              "projectPath": "C:\\Users\\Hassen\\Documents\\GitHub\\ProductStore\\PS.Services\\PS.Services.csproj"
             }
           }
         }

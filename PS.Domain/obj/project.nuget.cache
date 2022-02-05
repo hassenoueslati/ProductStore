@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HF/v8IjmARG/iLjUWxhq/ljkhSCjVpSubaHJmnviFNUacNEBLKk/OE1SZ05ZruRSpEk+pQCLc6Agf01oM41yGA==",
+  "dgSpecHash": "vtQCaV3fNOgvJF3fmahQDDWVT0S6m+iOjxlo5WTspgHeQEIT8FTTcf4vzNhkXJkzlDKxm3rWDCz+TwBJw0smQg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Hassen\\Desktop\\4TWIN\\S2\\.NET\\ProductStore\\PS.Domain\\PS.Domain.csproj",
+  "projectFilePath": "C:\\Users\\Hassen\\Documents\\GitHub\\ProductStore\\PS.Domain\\PS.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
