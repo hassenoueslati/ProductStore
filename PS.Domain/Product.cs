@@ -22,7 +22,11 @@ namespace PS.Domain
 
         public override string ToString()
         {
-            return "Name : "+ Name + " Quantity : " + Quantity;
+            return "Name : "+ Name + " Quantity : " + Quantity + "Price :" + Price + "DateProd : " + DateProd;
+        }
+        public void GetMyType()
+        {
+            Console.Write("Je suis un produit");
         }
     }
 }
