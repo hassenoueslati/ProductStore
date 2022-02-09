@@ -11,5 +11,12 @@ namespace PS.Domain
         public string LabName { get; set; }
 
         public string StreetAddress { get; set; }
+
+        public void GetMyType()
+        {
+            base.GetMyType();
+            Console.WriteLine("chemical");
+        }
     }
+    
 }
