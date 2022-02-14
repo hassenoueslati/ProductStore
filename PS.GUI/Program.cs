@@ -1,4 +1,5 @@
 ﻿using PS.Domain;
+using PS.Services;
 using System;
 using System.Collections.Generic;
 
@@ -113,6 +114,15 @@ namespace PS.GUI
             Console.WriteLine("Get Products");
             pr.GetProducts("Price","600");
 
+            Console.WriteLine("///////////deleguer////////////");
+
+            ManageProduct mp = new ManageProduct();
+            mp.LsProduct = products;
+            foreach(Product pp in mp.FindProduct('l'))
+            {
+                Console.WriteLine(pp);
+            }
+           
 
 
 
