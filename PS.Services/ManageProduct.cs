@@ -56,12 +56,12 @@ namespace PS.Services
             return Ls2Product;
         }
 
-       public IEnumerable<Chemical> Get5Chemical(double price)
+       public IEnumerable<Chemical> Get3Chemical(double price)
         {
             var req = from p in LsProduct.OfType<Chemical>()
                       where p.Price > price
                       select p;
-            return req.Take(5);
+            return req.Take(3);
             //ignorer les 2 premiers produits
             // return req.Skip(2)
 
@@ -80,6 +80,25 @@ namespace PS.Services
         public int GetCountProduct()
         {
             return LsProduct.OfType<Chemical>().Count();
+        }
+
+        public IEnumerable<Chemical> GetChemicalCity()
+        {
+            /*var req = from c in LsProduct.OfType<Chemical>()
+                      orderby c.City 
+                      //descending  //<=  pour order descendent
+                      select c;*/
+            var req2 = LsProduct.OfType<Chemical>().OrderBy(ch => ch.City);
+            return req2;
+        }
+
+        public IEnumerable <IGrouping<String,Chemical>> GetChemicalGroupByCity()
+        {
+            var req = from c in LsProduct.OfType<Chemical>()
+                      orderby c.City
+                      group c by c.City;
+            var req2 = LsProduct.OfType<Chemical>().OrderBy(ch => ch.City).GroupBy(ch => ch.City);
+            return req2;
         }
 
 
