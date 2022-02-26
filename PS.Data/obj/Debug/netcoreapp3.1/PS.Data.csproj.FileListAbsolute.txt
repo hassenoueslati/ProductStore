@@ -1,0 +1,10 @@
+C:\Users\Hassen\Documents\GitHub\ProductStore\PS.Data\bin\Debug\netcoreapp3.1\PS.Data.deps.json
+C:\Users\Hassen\Documents\GitHub\ProductStore\PS.Data\bin\Debug\netcoreapp3.1\PS.Data.dll
+C:\Users\Hassen\Documents\GitHub\ProductStore\PS.Data\bin\Debug\netcoreapp3.1\PS.Data.pdb
+C:\Users\Hassen\Documents\GitHub\ProductStore\PS.Data\obj\Debug\netcoreapp3.1\PS.Data.csproj.AssemblyReference.cache
+C:\Users\Hassen\Documents\GitHub\ProductStore\PS.Data\obj\Debug\netcoreapp3.1\PS.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Hassen\Documents\GitHub\ProductStore\PS.Data\obj\Debug\netcoreapp3.1\PS.Data.AssemblyInfoInputs.cache
+C:\Users\Hassen\Documents\GitHub\ProductStore\PS.Data\obj\Debug\netcoreapp3.1\PS.Data.AssemblyInfo.cs
+C:\Users\Hassen\Documents\GitHub\ProductStore\PS.Data\obj\Debug\netcoreapp3.1\PS.Data.csproj.CoreCompileInputs.cache
+C:\Users\Hassen\Documents\GitHub\ProductStore\PS.Data\obj\Debug\netcoreapp3.1\PS.Data.dll
+C:\Users\Hassen\Documents\GitHub\ProductStore\PS.Data\obj\Debug\netcoreapp3.1\PS.Data.pdb

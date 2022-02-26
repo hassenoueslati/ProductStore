@@ -8,7 +8,7 @@ namespace PS.Domain
     {
         public string Herbs { get; set; }
 
-        public void GetMyType()
+        public override void GetMyType()
         {
             base.GetMyType(); 
             Console.WriteLine("biologique");

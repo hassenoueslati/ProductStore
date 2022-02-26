@@ -12,10 +12,15 @@ namespace PS.Domain
 
         public string StreetAddress { get; set; }
 
-        public void GetMyType()
+        public override void GetMyType()
         {
             base.GetMyType();
             Console.WriteLine("chemical");
+        }
+        public override string ToString()
+        {
+            return base.ToString()+ "City: " + City;
+
         }
     }
     

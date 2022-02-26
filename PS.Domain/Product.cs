@@ -4,6 +4,7 @@ using System.Text;
 
 namespace PS.Domain
 {
+    //sealed pour bloquer l'heritage
     public class Product
     {
   
@@ -24,7 +25,7 @@ namespace PS.Domain
         {
             return "Name : "+ Name + " Quantity : " + Quantity + "Price :" + Price + "DateProd : " + DateProd;
         }
-        public void GetMyType()
+        public virtual void GetMyType()
         {
             Console.Write("Je suis un produit");
         }
