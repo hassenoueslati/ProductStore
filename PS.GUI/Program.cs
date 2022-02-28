@@ -1,4 +1,5 @@
-﻿using PS.Domain;
+﻿using PS.Data;
+using PS.Domain;
 using PS.Services;
 using System;
 using System.Collections.Generic;
@@ -186,6 +187,12 @@ namespace PS.GUI
             
             Console.WriteLine(s.Upper());
 
+            Console.WriteLine("///////////insertion dans la base de donnee////////////");
+            PSContext ctx = new PSContext();
+
+            ctx.Products.Add(p4);
+            ctx.Chemicals.Add(chem);
+            ctx.SaveChanges();
 
         }
     }

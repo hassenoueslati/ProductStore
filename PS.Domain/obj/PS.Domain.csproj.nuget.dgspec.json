@@ -13,6 +13,9 @@
         "packagesPath": "C:\\Users\\Hassen\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Hassen\\Documents\\GitHub\\ProductStore\\PS.Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
           "C:\\Users\\Hassen\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"

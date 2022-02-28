@@ -24,3 +24,5 @@ C:\Users\Hassen\Documents\GitHub\ProductStore\PS.Services\obj\Debug\netcoreapp3.
 C:\Users\Hassen\Documents\GitHub\ProductStore\PS.Services\obj\Debug\netcoreapp3.1\PS.Services.csproj.CopyComplete
 C:\Users\Hassen\Documents\GitHub\ProductStore\PS.Services\obj\Debug\netcoreapp3.1\PS.Services.dll
 C:\Users\Hassen\Documents\GitHub\ProductStore\PS.Services\obj\Debug\netcoreapp3.1\PS.Services.pdb
+C:\Users\Hassen\Documents\GitHub\ProductStore\PS.Services\bin\Debug\netcoreapp3.1\PS.Data.dll
+C:\Users\Hassen\Documents\GitHub\ProductStore\PS.Services\bin\Debug\netcoreapp3.1\PS.Data.pdb

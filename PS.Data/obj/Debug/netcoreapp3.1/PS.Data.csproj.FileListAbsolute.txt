@@ -8,3 +8,9 @@ C:\Users\Hassen\Documents\GitHub\ProductStore\PS.Data\obj\Debug\netcoreapp3.1\PS
 C:\Users\Hassen\Documents\GitHub\ProductStore\PS.Data\obj\Debug\netcoreapp3.1\PS.Data.csproj.CoreCompileInputs.cache
 C:\Users\Hassen\Documents\GitHub\ProductStore\PS.Data\obj\Debug\netcoreapp3.1\PS.Data.dll
 C:\Users\Hassen\Documents\GitHub\ProductStore\PS.Data\obj\Debug\netcoreapp3.1\PS.Data.pdb
+C:\Users\Hassen\Documents\GitHub\ProductStore\PS.Data\bin\Debug\netcoreapp3.1\PS.Data.runtimeconfig.json
+C:\Users\Hassen\Documents\GitHub\ProductStore\PS.Data\bin\Debug\netcoreapp3.1\PS.Data.runtimeconfig.dev.json
+C:\Users\Hassen\Documents\GitHub\ProductStore\PS.Data\bin\Debug\netcoreapp3.1\PS.Domain.dll
+C:\Users\Hassen\Documents\GitHub\ProductStore\PS.Data\bin\Debug\netcoreapp3.1\PS.Domain.pdb
+C:\Users\Hassen\Documents\GitHub\ProductStore\PS.Data\obj\Debug\netcoreapp3.1\PS.Data.csproj.CopyComplete
+C:\Users\Hassen\Documents\GitHub\ProductStore\PS.Data\obj\Debug\netcoreapp3.1\PS.Data.genruntimeconfig.cache

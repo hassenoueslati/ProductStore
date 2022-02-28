@@ -17,6 +17,8 @@ namespace PS.Domain
 
         public string Description { get; set; }
 
+        public string ImageName { get; set; }
+
         public Category Category { get; set; }
 
         public List<Provider> Providers { get; set; }
