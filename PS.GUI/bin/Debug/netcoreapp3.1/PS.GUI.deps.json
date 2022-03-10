@@ -1088,6 +1088,9 @@
         }
       },
       "PS.Domain/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Abstractions": "5.0.13"
+        },
         "runtime": {
           "PS.Domain.dll": {}
         }

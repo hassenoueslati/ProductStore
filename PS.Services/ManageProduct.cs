@@ -88,16 +88,16 @@ namespace PS.Services
                       orderby c.City 
                       //descending  //<=  pour order descendent
                       select c;*/
-            var req2 = LsProduct.OfType<Chemical>().OrderBy(ch => ch.City);
+            var req2 = LsProduct.OfType<Chemical>().OrderBy(ch => ch.MyAdress.City);
             return req2;
         }
 
         public IEnumerable <IGrouping<String,Chemical>> GetChemicalGroupByCity()
         {
             var req = from c in LsProduct.OfType<Chemical>()
-                      orderby c.City
-                      group c by c.City;
-            var req2 = LsProduct.OfType<Chemical>().OrderBy(ch => ch.City).GroupBy(ch => ch.City);
+                      orderby c.MyAdress.City
+                      group c by c.MyAdress.City;
+            var req2 = LsProduct.OfType<Chemical>().OrderBy(ch => ch.MyAdress.City).GroupBy(ch => ch.MyAdress.City);
             return req2;
         }
 

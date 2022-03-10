@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "7TqIHBIaq2vi3JpITyQ4vdSiv8WwXayZtrl7mi/BovotkHdpzCfaH8GbLOpoNIWXqQKuIT5yXXZToFk8ChBZHw==",
+  "dgSpecHash": "LOZlqopVi99OeGmRpwwJ4u06j076mzx0YNFMwaD9AuT3rdAfs1q/v57DUly9Tv9wquM5PzsHMpFoD+54nFr9HQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Hassen\\Documents\\GitHub\\ProductStore\\PS.Domain\\PS.Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Hassen\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.13\\microsoft.entityframeworkcore.abstractions.5.0.13.nupkg.sha512"
+  ],
   "logs": []
 }

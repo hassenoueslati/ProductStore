@@ -1,17 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
 namespace PS.Domain
 {
     public class Provider : Concept
     {
-        public int id { get; set; }
+        [Key]
+        public int ProviderCode { get; set; }
         //public string ConfirmPassword { get; set; }
         private string confirmPassword;
 
         public DateTime dateCreated { get; set; }
-
+        [DataType(DataType.EmailAddress)]
+        [Required(ErrorMessage = "email is required")]
         public string email { get; set; }
 
         public bool isApproved { get; set; }
@@ -23,7 +27,9 @@ namespace PS.Domain
         public string userName { get; set; }
 
         public List<Product> Products { get; set; }
-
+        [DataType(DataType.Password)]
+        [Required(ErrorMessage ="password is required")]
+        [MinLength(10)]
         public string Password
         {
             get
@@ -40,7 +46,10 @@ namespace PS.Domain
 
             }
         }
-
+        [DataType(DataType.Password)]
+        [Required(ErrorMessage = "password is required")]
+        [NotMapped] 
+        [Compare("Password", ErrorMessage = "ConfirmPassword must be equal to Password")]
         public string ConfirmPassword
         {
             get

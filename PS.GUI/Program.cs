@@ -64,27 +64,30 @@ namespace PS.GUI
             Product prod = new Product();
             Chemical chem = new Chemical() {
                 Name="Chemicall",
-                Price=50,
-                City="Paris"
+                Price=50
+                
             };
+            chem.MyAdress.City = "beb jdid";
             Chemical chem1 = new Chemical()
             {
                 Name = "Chemicall",
-                Price = 150,
-                City = "Paris"
+                Price = 150
             };
+            chem1.MyAdress.City = "manchester";
             Chemical chem2 = new Chemical()
             {
                 Name = "Chemicall",
-                Price = 20,
-                City = "Tunis"
+                Price = 20
+               
             };
+            chem2.MyAdress.City = "milon";
             Chemical chem3 = new Chemical()
             {
                 Name = "Chemicall",
-                Price = 50,
-                City = "Madrid"
+                Price = 50
+             
             };
+            chem3.MyAdress.City = "barcelone";
             Product bio = new Biological();
 
             prod.GetMyType();

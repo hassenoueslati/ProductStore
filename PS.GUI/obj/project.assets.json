@@ -1527,6 +1527,9 @@
       "PS.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Abstractions": "5.0.13"
+        },
         "compile": {
           "bin/placeholder/PS.Domain.dll": {}
         },

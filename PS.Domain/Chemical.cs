@@ -6,11 +6,11 @@ namespace PS.Domain
 {
     public class Chemical : Product
     {
-        public string City { get; set; }
+        
 
         public string LabName { get; set; }
 
-        public string StreetAddress { get; set; }
+        public Adress MyAdress { get; set; } = new Adress();
 
         public override void GetMyType()
         {
@@ -19,7 +19,7 @@ namespace PS.Domain
         }
         public override string ToString()
         {
-            return base.ToString()+ "City: " + City;
+            return base.ToString()+ "City: " + MyAdress;
 
         }
     }
