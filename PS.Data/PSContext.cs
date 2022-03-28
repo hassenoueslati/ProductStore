@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using PS.Data.MyConfigurations;
 using PS.Domain;
 using System;
 using System.Collections.Generic;
@@ -20,6 +21,18 @@ namespace PS.Data
                                         Integrated Security=true;
                                         MultipleActiveResultSets=true");
             base.OnConfiguring(optionsBuilder);
+
+
+        }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            //modelBuilder.ApplyConfiguration(new CategoryConfiguration());
+            modelBuilder.Entity<Category>().ToTable("MyCategories");
+            modelBuilder.Entity<Category>().HasKey(C => C.CategoryId);
+            modelBuilder.Entity<Category>().Property(C => C.Name).IsRequired().HasMaxLength(50);
+           
+            modelBuilder.ApplyConfiguration(new ProductConfiguration());
+            base.OnModelCreating(modelBuilder);
         }
     }
 }

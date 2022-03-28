@@ -27,10 +27,9 @@ namespace PS.Domain
 
         public string ImageName { get; set; }
         // ? optionnelle
-        public int? CategoryFK { get; set; }
         //[ForeignKey("Category")]
-        //public int CategoryFK { get; set; }
-
+        public int? CategoryFK { get; set; }
+       
         [ForeignKey("CategoryFK")]
         public Category Category { get; set; }
 
