@@ -31,9 +31,11 @@ namespace PS.Domain
         public int? CategoryFK { get; set; }
        
         [ForeignKey("CategoryFK")]
-        public Category Category { get; set; }
+        public virtual Category Category { get; set; }
 
-        public List<Provider> Providers { get; set; }
+        public virtual List<Provider> Providers { get; set; }
+
+        public virtual List<Achat> Achats { get; set; }
 
         public override string ToString()
         {

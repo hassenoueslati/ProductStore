@@ -88,3 +88,5 @@ C:\Users\Hassen\Documents\GitHub\ProductStore\PS.GUI\bin\Debug\netcoreapp3.1\run
 C:\Users\Hassen\Documents\GitHub\ProductStore\PS.GUI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
 C:\Users\Hassen\Documents\GitHub\ProductStore\PS.GUI\bin\Debug\netcoreapp3.1\PS.Data.dll
 C:\Users\Hassen\Documents\GitHub\ProductStore\PS.GUI\bin\Debug\netcoreapp3.1\PS.Data.pdb
+C:\Users\Hassen\Documents\GitHub\ProductStore\PS.GUI\bin\Debug\netcoreapp3.1\Castle.Core.dll
+C:\Users\Hassen\Documents\GitHub\ProductStore\PS.GUI\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Proxies.dll

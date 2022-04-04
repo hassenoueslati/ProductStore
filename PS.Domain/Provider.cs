@@ -26,7 +26,7 @@ namespace PS.Domain
 
         public string userName { get; set; }
 
-        public List<Product> Products { get; set; }
+        public virtual List<Product> Products { get; set; }
         [DataType(DataType.Password)]
         [Required(ErrorMessage ="password is required")]
         [MinLength(10)]

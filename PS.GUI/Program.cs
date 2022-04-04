@@ -195,8 +195,18 @@ namespace PS.GUI
 
             ctx.Products.Add(p4);
             ctx.Chemicals.Add(chem);
-            ctx.SaveChanges();
+            Category C4 = new Category
+            {
+                Name = "Produit frais"
+            };
+            p4.Category = C4;
+            ctx.Categories.Add(C4);
+            foreach(Product pro in ctx.Products)
+            {
+                Console.WriteLine("Product Name :" + pro.Name + " Category :" + pro.Category.Name);
+            }
 
+            ctx.SaveChanges();
         }
     }
 }

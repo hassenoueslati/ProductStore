@@ -3,44 +3,23 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using PS.Data;
 
 namespace PS.Data.Migrations
 {
     [DbContext(typeof(PSContext))]
-    partial class PSContextModelSnapshot : ModelSnapshot
+    [Migration("20220404081749_TPT")]
+    partial class TPT
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("ProductVersion", "5.0.13")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-            modelBuilder.Entity("PS.Domain.Achat", b =>
-                {
-                    b.Property<DateTime>("DateAchat")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("ClientFK")
-                        .HasColumnType("int");
-
-                    b.Property<int>("ProductFK")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Quantite")
-                        .HasColumnType("int");
-
-                    b.HasKey("DateAchat", "ClientFK", "ProductFK");
-
-                    b.HasIndex("ClientFK");
-
-                    b.HasIndex("ProductFK");
-
-                    b.ToTable("Achat");
-                });
 
             modelBuilder.Entity("PS.Domain.Category", b =>
                 {
@@ -52,33 +31,11 @@ namespace PS.Data.Migrations
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)")
-                        .HasColumnName("MyName");
+                        .HasColumnType("nvarchar(50)");
 
                     b.HasKey("CategoryId");
 
                     b.ToTable("MyCategories");
-                });
-
-            modelBuilder.Entity("PS.Domain.Client", b =>
-                {
-                    b.Property<int>("CIN")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<DateTime>("DateNaissance")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Nom")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Prenom")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("CIN");
-
-                    b.ToTable("Client");
                 });
 
             modelBuilder.Entity("PS.Domain.Product", b =>
@@ -103,8 +60,7 @@ namespace PS.Data.Migrations
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)")
-                        .HasColumnName("MyName");
+                        .HasColumnType("nvarchar(50)");
 
                     b.Property<double>("Price")
                         .HasColumnType("float");
@@ -183,25 +139,6 @@ namespace PS.Data.Migrations
                     b.ToTable("Chemicals");
                 });
 
-            modelBuilder.Entity("PS.Domain.Achat", b =>
-                {
-                    b.HasOne("PS.Domain.Client", "Client")
-                        .WithMany("Achats")
-                        .HasForeignKey("ClientFK")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("PS.Domain.Product", "Product")
-                        .WithMany("Achats")
-                        .HasForeignKey("ProductFK")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Client");
-
-                    b.Navigation("Product");
-                });
-
             modelBuilder.Entity("PS.Domain.Product", b =>
                 {
                     b.HasOne("PS.Domain.Category", "Category")
@@ -271,16 +208,6 @@ namespace PS.Data.Migrations
             modelBuilder.Entity("PS.Domain.Category", b =>
                 {
                     b.Navigation("Products");
-                });
-
-            modelBuilder.Entity("PS.Domain.Client", b =>
-                {
-                    b.Navigation("Achats");
-                });
-
-            modelBuilder.Entity("PS.Domain.Product", b =>
-                {
-                    b.Navigation("Achats");
                 });
 #pragma warning restore 612, 618
         }
