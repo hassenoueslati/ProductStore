@@ -54,6 +54,15 @@ namespace PS.Data
                 prop.SetColumnName("MyName");
             }
 
+            //définir une configuration pour mapper tous les props qui finissent par code dans des columns obligatoire
+            foreach (var prop in modelBuilder.Model.GetEntityTypes()
+                .SelectMany(e => e.GetProperties())
+                .Where(p => p.Name.EndsWith("code"))
+                )
+            {
+                prop.IsNullable = false;
+            }
+
             //Table Proteuse config FK
 
             modelBuilder.Entity<Achat>().HasKey(a => new { a.DateAchat, a.ClientFK, a.ProductFK });

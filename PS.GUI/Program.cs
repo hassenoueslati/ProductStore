@@ -191,22 +191,23 @@ namespace PS.GUI
             Console.WriteLine(s.Upper());
 
             Console.WriteLine("///////////insertion dans la base de donnee////////////");
-            PSContext ctx = new PSContext();
-
-            ctx.Products.Add(p4);
-            ctx.Chemicals.Add(chem);
+            //PSContext ctx = new PSContext();
+            ServiceProduct sp = new ServiceProduct();
+            ServiceCategory sc = new ServiceCategory();
+            sp.Add(p4);
+            sp.Add(chem);
             Category C4 = new Category
             {
                 Name = "Produit frais"
             };
             p4.Category = C4;
-            ctx.Categories.Add(C4);
-            foreach(Product pro in ctx.Products)
+            sc.Add(C4);
+            foreach(Product pro in sp.GetAll())
             {
                 Console.WriteLine("Product Name :" + pro.Name + " Category :" + pro.Category.Name);
             }
 
-            ctx.SaveChanges();
+            sp.Commit();
         }
     }
 }
