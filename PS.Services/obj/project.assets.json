@@ -2163,6 +2163,19 @@
         "runtime": {
           "bin/placeholder/PS.Domain.dll": {}
         }
+      },
+      "PS.ServicePattern/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "PS.Data": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/PS.ServicePattern.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PS.ServicePattern.dll": {}
+        }
       }
     }
   },
@@ -7378,12 +7391,18 @@
       "type": "project",
       "path": "../PS.Domain/PS.Domain.csproj",
       "msbuildProject": "../PS.Domain/PS.Domain.csproj"
+    },
+    "PS.ServicePattern/1.0.0": {
+      "type": "project",
+      "path": "../PS.ServicePattern/PS.ServicePattern.csproj",
+      "msbuildProject": "../PS.ServicePattern/PS.ServicePattern.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "PS.Data >= 1.0.0",
-      "PS.Domain >= 1.0.0"
+      "PS.Domain >= 1.0.0",
+      "PS.ServicePattern >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -7422,6 +7441,9 @@
             },
             "C:\\Users\\Hassen\\Documents\\GitHub\\ProductStore\\PS.Domain\\PS.Domain.csproj": {
               "projectPath": "C:\\Users\\Hassen\\Documents\\GitHub\\ProductStore\\PS.Domain\\PS.Domain.csproj"
+            },
+            "C:\\Users\\Hassen\\Documents\\GitHub\\ProductStore\\PS.ServicePattern\\PS.ServicePattern.csproj": {
+              "projectPath": "C:\\Users\\Hassen\\Documents\\GitHub\\ProductStore\\PS.ServicePattern\\PS.ServicePattern.csproj"
             }
           }
         }

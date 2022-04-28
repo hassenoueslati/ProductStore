@@ -9,7 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PS.GUI", "PS.GUI\PS.GUI.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PS.Services", "PS.Services\PS.Services.csproj", "{261D84F3-8680-4F1D-AFE8-1413A671D2BC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PS.Data", "PS.Data\PS.Data.csproj", "{8A2B199A-A3A4-41DF-B3F9-A96B40BD582E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PS.Data", "PS.Data\PS.Data.csproj", "{8A2B199A-A3A4-41DF-B3F9-A96B40BD582E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PS.ServicePattern", "PS.ServicePattern\PS.ServicePattern.csproj", "{6411A0AE-A97F-46F2-8108-6B612D3C6FE3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PS.Web", "PS.Web\PS.Web.csproj", "{CC335F25-93AC-42FE-9BDD-60AB591F8982}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,14 @@ Global
 		{8A2B199A-A3A4-41DF-B3F9-A96B40BD582E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8A2B199A-A3A4-41DF-B3F9-A96B40BD582E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8A2B199A-A3A4-41DF-B3F9-A96B40BD582E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6411A0AE-A97F-46F2-8108-6B612D3C6FE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6411A0AE-A97F-46F2-8108-6B612D3C6FE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6411A0AE-A97F-46F2-8108-6B612D3C6FE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6411A0AE-A97F-46F2-8108-6B612D3C6FE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC335F25-93AC-42FE-9BDD-60AB591F8982}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC335F25-93AC-42FE-9BDD-60AB591F8982}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC335F25-93AC-42FE-9BDD-60AB591F8982}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC335F25-93AC-42FE-9BDD-60AB591F8982}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

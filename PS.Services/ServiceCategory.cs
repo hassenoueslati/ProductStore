@@ -1,33 +1,15 @@
 ﻿using PS.Data;
+using PS.Data.Infrastructure;
 using PS.Domain;
+using ServicePattern;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace PS.Services
 {
-    public class ServiceCategory : IServiceCategory
+    public class ServiceCategory : Service<Category>, IServiceCategory
     {
-        PSContext ctx = new PSContext();
-        public void Add(Category c)
-        {
-            ctx.Categories.Add(c);
-        }
-
-        public IEnumerable<Category> GetAll()
-        {
-            return ctx.Categories;
-
-        }
-
-        public void Remove(Category c)
-        {
-            ctx.Categories.Remove(c);
-        }
-
-        public void Commit()
-        {
-            ctx.SaveChanges();
-        }
+       
     }
 }

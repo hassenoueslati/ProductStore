@@ -202,7 +202,7 @@ namespace PS.GUI
             };
             p4.Category = C4;
             sc.Add(C4);
-            foreach(Product pro in sp.GetAll())
+            foreach(Product pro in sp.GetMany())
             {
                 Console.WriteLine("Product Name :" + pro.Name + " Category :" + pro.Category.Name);
             }
