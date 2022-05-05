@@ -11,6 +11,10 @@ namespace PS.Services
 {
     public class ServiceProduct : Service<Product>, IServiceProduct
     {
+        public ServiceProduct(IUnitOfWork uow):base(uow)
+        {
+
+        }
         public IEnumerable<Product> FindMostExpensiveFiveProds()
         {
           return  GetMany().OrderByDescending(p => p.Price).Take(5);
@@ -25,7 +29,9 @@ namespace PS.Services
         }
         public IEnumerable<Product> GetProdsByClient(Client c)
         {
-            ServiceAchat sa = new ServiceAchat();
+            IDataBaseFactory dbf = new DataBaseFactory();
+            IUnitOfWork uow = new UnitOfWork(dbf);
+            ServiceAchat sa = new ServiceAchat(uow);
             return sa.GetMany(a => a.ClientFK == c.CIN).Select(a => a.Product);
         }
 

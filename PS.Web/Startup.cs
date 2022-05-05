@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using PS.Data.Infrastructure;
+using PS.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,6 +24,11 @@ namespace PS.Web
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddScoped<IServiceCategory, ServiceCategory>()
+                    .AddScoped<IServiceProduct, ServiceProduct>()
+                    .AddTransient<IUnitOfWork, UnitOfWork>()
+                    .AddScoped <IDataBaseFactory,DataBaseFactory>()
+                    .BuildServiceProvider();
             services.AddControllersWithViews();
         }
 

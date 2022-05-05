@@ -21,4 +21,8 @@
     <ProjectReference Include="..\PS.Services\PS.Services.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\uploads\" />
+  </ItemGroup>
+
 </Project>

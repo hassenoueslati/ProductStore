@@ -7,9 +7,14 @@ using System.Text;
 namespace PS.Domain
 {
     //sealed pour bloquer l'heritage
+
+    public enum PackagingType
+    {
+        carton = 0,
+        Plastic = 1
+    };
     public class Product
     {
-  
         public int ProductId { get; set; }
         [Required(ErrorMessage ="name is required")]
         [MaxLength(25,ErrorMessage ="name max length must be less then 25")] //input length
@@ -24,6 +29,7 @@ namespace PS.Domain
         public double Price { get; set; }
         [DataType(DataType.MultilineText)]
         public string Description { get; set; }
+        public PackagingType PType { get; set; } = 0;        
 
         public string ImageName { get; set; }
         // ? optionnelle

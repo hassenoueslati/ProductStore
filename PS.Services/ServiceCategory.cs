@@ -10,6 +10,10 @@ namespace PS.Services
 {
     public class ServiceCategory : Service<Category>, IServiceCategory
     {
-       
+        public ServiceCategory(IUnitOfWork uow) : base(uow)
+        {
+
+        }
+
     }
 }

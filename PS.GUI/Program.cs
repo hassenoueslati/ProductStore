@@ -1,4 +1,5 @@
 ﻿using PS.Data;
+using PS.Data.Infrastructure;
 using PS.Domain;
 using PS.Services;
 using System;
@@ -192,8 +193,10 @@ namespace PS.GUI
 
             Console.WriteLine("///////////insertion dans la base de donnee////////////");
             //PSContext ctx = new PSContext();
-            ServiceProduct sp = new ServiceProduct();
-            ServiceCategory sc = new ServiceCategory();
+            IDataBaseFactory dbf = new DataBaseFactory();
+            IUnitOfWork uow = new UnitOfWork(dbf);
+            ServiceProduct sp = new ServiceProduct(uow);
+            ServiceCategory sc = new ServiceCategory(uow);
             sp.Add(p4);
             sp.Add(chem);
             Category C4 = new Category

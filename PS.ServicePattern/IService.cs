@@ -13,6 +13,7 @@ namespace ServicePattern
         void Delete(Expression<Func<T, bool>> where);
         T GetById(long id);
         T GetById(string id);
+        T GetById(int id);
         IEnumerable<T> GetMany(Expression<Func<T, bool>> where = null);
         T Get(Expression<Func<T, bool>> where);
         void Commit();

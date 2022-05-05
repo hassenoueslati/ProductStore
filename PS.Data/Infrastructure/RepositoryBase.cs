@@ -44,6 +44,10 @@ namespace PS.Data.Infrastructure
         {
             return dbset.Find(id);
         }
+        public virtual T GetById(int id)
+        {
+            return dbset.Find(id);
+        }
         public IEnumerable<T> GetAll()
         {
             return dbset.AsEnumerable();

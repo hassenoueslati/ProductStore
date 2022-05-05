@@ -13,6 +13,7 @@ namespace PS.Data.Infrastructure
         void Delete(Expression<Func<T, bool>> where);
         T GetById(long Id);
         T GetById(string Id);
+        T GetById(int id);
         T Get(Expression<Func<T, bool>> where);
         IEnumerable<T> GetAll(); // GetMany()
         IEnumerable<T> GetMany(Expression<Func<T, bool>> where = null);
